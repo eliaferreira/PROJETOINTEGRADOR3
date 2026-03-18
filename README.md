@@ -11,6 +11,7 @@ Projeto acadêmico desenvolvido para disciplina de Projeto Integrador III.
 - João Vithor Lordes Stem Machado
 - Luan Gonçalves dos Santos
 - Marcelo Faitanin Machado
+- Lucas da Silva de Melo
   
 
 ---
