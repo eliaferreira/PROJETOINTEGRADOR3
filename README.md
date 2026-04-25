@@ -21,6 +21,11 @@ O foco não é apenas analisar os dados, mas transformar essas informações
 em algo útil para melhorar a segurança nas cidades.
 
 ---
+## 🌐 Visualização
+
+Você pode visualizar o projeto [clicando aqui](https://eliaferreira.github.io/PROJETOINTEGRADOR3/).
+
+---
 
 ## 👥 Integrantes do Grupo
 
