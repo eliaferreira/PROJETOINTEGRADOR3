@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Acidentes de Trânsito - ES</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
-    <!-- Estilos do projeto -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <!-- Cabeçalho -->
     <header class="header">
       <div class="container header-inner">
         <div class="logo">
@@ -31,7 +27,7 @@
         <nav class="nav" id="nav">
           <a href="#inicio"    class="nav-link active">Início</a>
           <a href="#indices"   class="nav-link">Índices</a>
-          <a href="#mapa"      class="nav-link">Mapa</a>
+          <a href="#mapa"      class="nav-link">Mapa e Dashboard</a>
           <a href="#campanhas" class="nav-link">Campanhas</a>
           <a href="#sobre"     class="nav-link">Sobre</a>
         </nav>
@@ -44,7 +40,6 @@
 
     <main>
 
-      <!-- ─── HERO ───────────────────────────────────────────── -->
       <section class="hero" id="inicio">
         <div class="hero-bg-pattern"></div>
         <div class="container hero-inner">
@@ -54,7 +49,7 @@
               conscientização e o planejamento da segurança no trânsito capixaba.</p>
             <div class="hero-actions">
               <a href="#indices" class="btn btn-primary">Ver índices</a>
-              <a href="#mapa"    class="btn btn-outline">Explorar mapa</a>
+              <a href="#mapa"    class="btn btn-outline">Explorar Dashboard</a>
             </div>
           </div>
           <div class="hero-stats">
@@ -76,7 +71,6 @@
         </div>
       </section>
 
-      <!-- ─── ÍNDICES ────────────────────────────────────────── -->
       <section class="section" id="indices">
         <div class="container">
           <div class="section-header">
@@ -95,7 +89,24 @@
               <div class="metric-body">
                 <span class="metric-label">Total de acidentes</span>
                 <span class="metric-value">14.382</span>
-                <span class="metric-delta delta-up">↑ 3,2% vs 2025</span>
+                <span class="metric-delta delta-up">↑ 3,2% vs 2024</span>
+              </div>
+            </div>
+
+            <div class="metric-card metric-warning">
+              <div class="metric-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="metric-body">
+                <span class="metric-label">Total de Infrações</span>
+                <span class="metric-value">85.491</span>
+                <span class="metric-delta delta-up">↑ 5,1% vs 2024</span>
               </div>
             </div>
 
@@ -109,7 +120,7 @@
               <div class="metric-body">
                 <span class="metric-label">Vítimas fatais</span>
                 <span class="metric-value">412</span>
-                <span class="metric-delta delta-down">↓ 1,8% vs 2025</span>
+                <span class="metric-delta delta-down">↓ 1,8% vs 2024</span>
               </div>
             </div>
 
@@ -122,20 +133,7 @@
               <div class="metric-body">
                 <span class="metric-label">Feridos graves</span>
                 <span class="metric-value">2.107</span>
-                <span class="metric-delta delta-up">↑ 0,9% vs 2025</span>
-              </div>
-            </div>
-
-            <div class="metric-card metric-success">
-              <div class="metric-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </div>
-              <div class="metric-body">
-                <span class="metric-label">Só danos materiais</span>
-                <span class="metric-value">9.843</span>
-                <span class="metric-delta delta-down">↓ 2,1% vs 2025</span>
+                <span class="metric-delta delta-up">↑ 0,9% vs 2024</span>
               </div>
             </div>
 
@@ -148,11 +146,11 @@
               <div class="metric-body">
                 <span class="metric-label">Hora de maior risco</span>
                 <span class="metric-value">18h–20h</span>
-                <span class="metric-delta">horário de pico</span>
+                <span class="metric-delta">Pico de ocorrências</span>
               </div>
             </div>
 
-            <div class="metric-card metric-info">
+            <div class="metric-card metric-success">
               <div class="metric-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
@@ -169,30 +167,25 @@
         </div>
       </section>
 
-      <!-- ─── MAPA + TABELA ─────────────────────────────────── -->
-      <section class="section" id="mapa">
+      <section class="section section-alt" id="mapa">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Regiões de risco</h2>
-            <p class="section-sub">Municípios ordenados por índice de acidentes · clique no mapa ou na tabela para detalhar</p>
+            <h2 class="section-title">Dashboard Georreferenciado</h2>
+            <p class="section-sub">Clique em um município no mapa ou na tabela para filtrar todos os painéis</p>
           </div>
 
-          <!-- Grid: mapa (esq) + tabela (dir) -->
           <div class="mapa-grid">
 
-            <!-- Mapa interativo -->
             <div class="mapa-card">
               <div class="mapa-header">
-                <h3>Espírito Santo</h3>
+                <h3>Mapa de Calor — Espírito Santo</h3>
                 <div class="mapa-legenda">
                   <span class="leg-item"><span class="leg-dot leg-alto"></span> Alto risco</span>
                   <span class="leg-item"><span class="leg-dot leg-medio"></span> Médio</span>
                   <span class="leg-item"><span class="leg-dot leg-baixo"></span> Baixo</span>
-                  <span class="leg-item"><span class="leg-dot" style="background:#cbd5e1"></span> Sem dados</span>
                 </div>
               </div>
 
-              <!-- Leaflet map container -->
               <div class="mapBox">
                 <div id="leaflet-map"></div>
                 <div class="mapa-loading" id="mapaLoading">
@@ -203,25 +196,23 @@
                 </div>
               </div>
 
-              <!-- Painel de detalhes da cidade -->
               <div class="city-panel" id="cityInfoPanel">
                 <div class="city-placeholder" id="cityInfoPlaceholder">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                     <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
                   </svg>
-                  <span>Clique em um município no mapa ou na tabela para ver detalhes</span>
+                  <span>Selecione um município para exibir os detalhes</span>
                 </div>
                 <div class="city-content" id="cityInfoContent" style="display:none"></div>
               </div>
             </div>
 
-            <!-- Tabela ranking -->
             <div class="tabela-card">
               <div class="mapa-header">
-                <h3>Ranking de Municípios</h3>
+                <h3>Ranking Geral</h3>
                 <div class="tabela-filtros">
-                  <button class="filtro-btn active" data-filter="todos">Todos</button>
-                  <button class="filtro-btn" data-filter="alto">Alto risco</button>
+                  <button class="filtro-btn active" data-filter="todos">Todos (78)</button>
+                  <button class="filtro-btn" data-filter="alto">Alto</button>
                   <button class="filtro-btn" data-filter="medio">Médio</button>
                   <button class="filtro-btn" data-filter="baixo">Baixo</button>
                 </div>
@@ -244,38 +235,60 @@
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13 12H3"/>
                 </svg>
-                Clique em uma linha para localizar no mapa
+                Dica: Clique na linha para isolar os dados nos gráficos abaixo
               </div>
             </div>
 
-          </div><!-- /mapa-grid -->
-
-          <!-- ── Gráfico de tendência mensal ── -->
-          <div class="chart-card">
-            <div class="chart-card-header">
-              <div class="chart-card-titles">
-                <h3 id="chartTitle">Evolução mensal de acidentes — Espírito Santo</h3>
-                <p id="chartSub">Comparativo 2024 vs 2025 · clique em um município para atualizar o gráfico</p>
+          </div><div class="charts-grid">
+            
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-titles">
+                  <h3 id="chartTitle">Evolução mensal — Espírito Santo</h3>
+                  <p id="chartSub">Série histórica (2024 vs 2025)</p>
+                </div>
+                <div class="chart-card-badges">
+                  <span class="chart-badge chart-badge-2025">
+                    <span class="chart-badge-line" style="background:#0060B0"></span>2025
+                  </span>
+                  <span class="chart-badge chart-badge-2024">
+                    <span class="chart-badge-line chart-badge-dashed" style="background:#a3a3a3"></span>2024
+                  </span>
+                </div>
               </div>
-              <div class="chart-card-badges">
-                <span class="chart-badge chart-badge-2025">
-                  <span class="chart-badge-line" style="background:#0060B0"></span>2025
-                </span>
-                <span class="chart-badge chart-badge-2024">
-                  <span class="chart-badge-line chart-badge-dashed" style="background:#a3a3a3"></span>2024
-                </span>
+              <div class="chart-wrap">
+                <canvas id="trendChart"></canvas>
               </div>
             </div>
-            <div class="chart-wrap">
-              <canvas id="trendChart"></canvas>
-            </div>
-          </div>
 
-        </div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-titles">
+                  <h3 id="stackedTitle">Horários Críticos — Espírito Santo</h3>
+                  <p>Volume de acidentes distribuídos por turnos</p>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="stackedChart"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-titles">
+                  <h3 id="doughnutTitle">Veículos Envolvidos — Espírito Santo</h3>
+                  <p>Proporção dos principais causadores</p>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <canvas id="doughnutChart"></canvas>
+              </div>
+            </div>
+
+          </div></div>
       </section>
 
-      <!-- ─── CAMPANHAS ─────────────────────────────────────── -->
-      <section class="section section-alt" id="campanhas">
+      <section class="section" id="campanhas">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Campanhas de trânsito</h2>
@@ -317,38 +330,35 @@
         </div>
       </section>
 
-      <!-- ─── SOBRE ──────────────────────────────────────────── -->
-      <section class="section" id="sobre">
+      <section class="section section-alt" id="sobre">
         <div class="container">
           <div class="sobre-grid">
             <div class="sobre-texto">
               <h2 class="section-title">Sobre o observatório</h2>
               <p>O desenvolvimento do website Mapeamento de Acidentes de Trânsito é uma iniciativa dos alunos
-                Lucas Melo, Eliã Ferreira, Luan Gonçalves, Marcelo Faitanin, João Vithor Lordes e Gedson Leandro do curso de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS).
-                O projeto tem como objetivo aplicar, na prática, os conhecimentos adquiridos ao longo da graduação,
-                além de contribuir para o aprimoramento técnico e preparação para o mercado de trabalho.</p>
+                Lucas Melo, Eliã Ferreira, Luan Gonçalves, Marcelo Faitanin, João Vithor Lordes e Gedson Leandro do curso de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS).</p>
               <p>A plataforma foi idealizada com o propósito de centralizar, visualizar e tornar acessíveis os dados
                 relacionados a acidentes de trânsito nos 78 municípios do estado do Espírito Santo.</p>
               <p>Por meio dessas informações, busca-se apoiar a conscientização da população, contribuir com campanhas
                 educativas e fornecer subsídios para o planejamento de ações voltadas à segurança no trânsito e à mobilidade urbana.</p>
               <div class="sobre-badges">
                 <span class="sobre-badge">78 municípios</span>
-                <span class="sobre-badge">Dados abertos</span>
-                <span class="sobre-badge">Atualização mensal</span>
+                <span class="sobre-badge">Painéis Interativos</span>
+                <span class="sobre-badge">Atualização constante</span>
               </div>
             </div>
             <div class="sobre-info">
               <div class="info-item">
                 <span class="info-label">Fonte dos dados</span>
-                <span class="info-val">DETRAN|ES</span>
+                <span class="info-val">DETRAN|ES e PRF</span>
               </div>
               <div class="info-item">
-                <span class="info-label">Atualização</span>
-                <span class="info-val">Mensal (último: dez/2025)</span>
+                <span class="info-label">Atualização Base</span>
+                <span class="info-val">Dezembro de 2025</span>
               </div>
               <div class="info-item">
                 <span class="info-label">Metodologia</span>
-                <span class="info-val">Boletins de ocorrência de trânsito</span>
+                <span class="info-val">Integração de Boletins de Ocorrência</span>
               </div>
             </div>
           </div>
@@ -357,11 +367,8 @@
 
     </main>
 
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <!-- Script do projeto -->
     <script src="script.js"></script>
   </body>
 </html>
