@@ -54,18 +54,18 @@
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
-              <span class="hero-stat-num" data-target="14382" id="count1">0</span>
-              <span class="hero-stat-label">acidentes registrados em 2025</span>
+              <span class="hero-stat-num"  id="count1">0</span>
+              <span class="hero-stat-label" data-hero-label="sinistros">sinistros registrados (2024–2025)</span>
             </div>
             <div class="hero-stat-divider"></div>
             <div class="hero-stat">
-              <span class="hero-stat-num" data-target="412" id="count2">0</span>
-              <span class="hero-stat-label">vítimas fatais</span>
+              <span class="hero-stat-num" id="count2">0</span>
+              <span class="hero-stat-label" data-hero-label="fatais">vítimas fatais</span>
             </div>
             <div class="hero-stat-divider"></div>
             <div class="hero-stat">
-              <span class="hero-stat-num" data-target="78" id="count3">0</span>
-              <span class="hero-stat-label">municípios monitorados</span>
+              <span class="hero-stat-num"  id="count3">0</span>
+              <span class="hero-stat-label" data-hero-label="municipios">municípios monitorados</span>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Índices por categoria</h2>
-            <p class="section-sub">Atualizado em dezembro de 2025</p>
+            <p class="section-sub" data-meta="periodo">Acumulado 2024–2025 — atualizado em Dezembro de 2025</p>
           </div>
           <div class="cards-grid">
 
@@ -87,9 +87,9 @@
                 </svg>
               </div>
               <div class="metric-body">
-                <span class="metric-label">Total de acidentes</span>
-                <span class="metric-value">14.382</span>
-                <span class="metric-delta delta-up">↑ 3,2% vs 2024</span>
+                <span class="metric-label">Total de sinistros</span>
+                <span class="metric-value" data-metric="sinistros">—</span>
+                <span class="metric-delta">Período 2024–2025</span>
               </div>
             </div>
 
@@ -104,9 +104,9 @@
                 </svg>
               </div>
               <div class="metric-body">
-                <span class="metric-label">Total de Infrações</span>
-                <span class="metric-value">85.491</span>
-                <span class="metric-delta delta-up">↑ 5,1% vs 2024</span>
+                <span class="metric-label">Sinistros com vítimas</span>
+                <span class="metric-value" data-metric="sinistros-cv">—</span>
+                <span class="metric-delta">Ocorrências com feridos</span>
               </div>
             </div>
 
@@ -119,8 +119,8 @@
               </div>
               <div class="metric-body">
                 <span class="metric-label">Vítimas fatais</span>
-                <span class="metric-value">412</span>
-                <span class="metric-delta delta-down">↓ 1,8% vs 2024</span>
+                <span class="metric-value" data-metric="vitimas-fatais">—</span>
+                <span class="metric-delta">Período 2024–2025</span>
               </div>
             </div>
 
@@ -131,9 +131,9 @@
                 </svg>
               </div>
               <div class="metric-body">
-                <span class="metric-label">Feridos graves</span>
-                <span class="metric-value">2.107</span>
-                <span class="metric-delta delta-up">↑ 0,9% vs 2024</span>
+                <span class="metric-label">Vítimas parciais</span>
+                <span class="metric-value" data-metric="vitimas-parciais">—</span>
+                <span class="metric-delta">Feridos no local</span>
               </div>
             </div>
 
@@ -144,9 +144,9 @@
                 </svg>
               </div>
               <div class="metric-body">
-                <span class="metric-label">Hora de maior risco</span>
-                <span class="metric-value">18h–20h</span>
-                <span class="metric-delta">Pico de ocorrências</span>
+                <span class="metric-label">Fase de maior risco</span>
+                <span class="metric-value" data-metric="fase-pico">—</span>
+                <span class="metric-delta" data-metric="fase-pico-sub">Pico de ocorrências</span>
               </div>
             </div>
 
@@ -158,7 +158,7 @@
               </div>
               <div class="metric-body">
                 <span class="metric-label">Municípios monitorados</span>
-                <span class="metric-value">78 / 78</span>
+                <span class="metric-value" data-metric="municipios">—</span>
                 <span class="metric-delta delta-down">100% cobertura</span>
               </div>
             </div>
@@ -223,7 +223,7 @@
                     <tr>
                       <th>#</th>
                       <th>Município</th>
-                      <th>Acidentes</th>
+                      <th>Sinistros</th>
                       <th>Fatalidades</th>
                       <th>Risco</th>
                     </tr>
@@ -245,14 +245,14 @@
               <div class="chart-card-header">
                 <div class="chart-card-titles">
                   <h3 id="chartTitle">Evolução mensal — Espírito Santo</h3>
-                  <p id="chartSub">Série histórica (2024 vs 2025)</p>
+                  <p id="chartSub">Total de sinistros vs sinistros com vítimas</p>
                 </div>
                 <div class="chart-card-badges">
-                  <span class="chart-badge chart-badge-2025">
-                    <span class="chart-badge-line" style="background:#0060B0"></span>2025
+                  <span class="chart-badge">
+                    <span class="chart-badge-line" style="background:#0060B0"></span>Total
                   </span>
-                  <span class="chart-badge chart-badge-2024">
-                    <span class="chart-badge-line chart-badge-dashed" style="background:#a3a3a3"></span>2024
+                  <span class="chart-badge">
+                    <span class="chart-badge-line chart-badge-dashed" style="background:#dc2626"></span>Com vítimas
                   </span>
                 </div>
               </div>
@@ -264,8 +264,8 @@
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-titles">
-                  <h3 id="stackedTitle">Horários Críticos — Espírito Santo</h3>
-                  <p>Volume de acidentes distribuídos por turnos</p>
+                  <h3 id="stackedTitle">Sinistros mensais por gravidade — Espírito Santo</h3>
+                  <p>Sem vítima, com vítimas e fatais por mês</p>
                 </div>
               </div>
               <div class="chart-wrap">
@@ -276,12 +276,24 @@
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-titles">
-                  <h3 id="doughnutTitle">Veículos Envolvidos — Espírito Santo</h3>
-                  <p>Proporção dos principais causadores</p>
+                  <h3 id="doughnutTitle">Veículos envolvidos — Espírito Santo</h3>
+                  <p>Distribuição dos principais tipos de veículo</p>
                 </div>
               </div>
               <div class="chart-wrap">
                 <canvas id="doughnutChart"></canvas>
+              </div>
+            </div>
+
+            <div class="chart-card chart-card-wide">
+              <div class="chart-card-header">
+                <div class="chart-card-titles">
+                  <h3>Sinistros por região — Espírito Santo</h3>
+                  <p>Distribuição agregada por macrorregião do estado</p>
+                </div>
+              </div>
+              <div class="chart-wrap chart-wrap-short">
+                <canvas id="regionChart"></canvas>
               </div>
             </div>
 
