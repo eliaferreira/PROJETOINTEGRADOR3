@@ -29,7 +29,7 @@ Você pode visualizar o projeto [clicando aqui](https://eliaferreira.github.io/P
 
 ## 🎥 Demonstração em Vídeo
 
-Vídeo do protótipo do trabalho - Entrega 2: Assistir demonstração [clicando aqui](https://www.youtube.com/watch?v=g7nLRtZ_7us)
+Vídeo do protótipo do trabalho - Entrega 2: Para Assistir demonstração [clicando aqui](https://www.youtube.com/watch?v=g7nLRtZ_7us)
 
 ---
 
