@@ -105,7 +105,7 @@ section[id] { scroll-margin-top: 70px; }
 .hero-desc { color: rgba(255,255,255,.75); font-size: 1rem; max-width: 520px; line-height: 1.7; margin-bottom: 2rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1.5rem; border-radius: var(--radius-md); font-size: 14px; font-weight: 500; cursor: pointer; transition: all var(--transicao); border: none; font-family: var(--fonte-corpo); }
-.btn-primary { background: white; color: var(--azul-escuro); }
+.btn-primary { background: #FAF9F6; color: var(--azul-escuro); }
 .btn-primary:hover { background: #e6f2ff; transform: translateY(-1px); }
 .btn-outline { background: transparent; color: white; border: 1.5px solid rgba(255,255,255,.4); }
 .btn-outline:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
