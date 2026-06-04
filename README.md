@@ -35,12 +35,12 @@ Vídeo do protótipo do trabalho - Entrega 2: Para Assistir demonstração [clic
 
 ## 👥 Integrantes do Grupo
 
-- Eliã Barros Ferreira
-- Gedson Leandro Costa
-- João Vithor Lordes Stem Machado
-- Luan Gonçalves dos Santos
-- Marcelo Faitanin Machado
-- Lucas da Silva de Melo
+- Eliã Barros Ferreira.
+- Gedson Leandro Costa.
+- João Vithor Lordes Stem Machado.
+- Luan Gonçalves dos Santos.
+- Marcelo Faitanin Machado.
+- Lucas da Silva de Melo.
   
 
 ---
