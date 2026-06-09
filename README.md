@@ -20,6 +20,10 @@ O projeto inclui:
 O foco não é apenas analisar os dados, mas transformar essas informações 
 em algo útil para melhorar a segurança nas cidades.
 
+Este trabalho também presta uma homenagem ao nosso colega Bernardo Augusto Lodi, estudante do 5º período do curso de Análise e Desenvolvimento de Sistemas, cuja partida deixou profunda saudade entre amigos, professores e toda a comunidade acadêmica.
+
+Ao abordar a importância da segurança no trânsito, reforçamos a necessidade de conscientização, responsabilidade e cuidado coletivo para preservar vidas. Que a memória de Bernardo inspire atitudes mais seguras e humanas no trânsito, lembrando-nos de que cada vida tem um valor imensurável e merece ser protegida.
+
 ---
 ## 🌐 Visualização
 
