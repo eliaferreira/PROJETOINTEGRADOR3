@@ -5,22 +5,22 @@
 }
 
 :root {
-  --azul-escuro:  #003B6F;
-  --azul-medio:   #0060B0;
-  --azul-claro:   #E6F2FF;
-  --verde:        #16a34a;
-  --vermelho:     #dc2626;
-  --laranja:      #ea580c;
-  --amarelo:      #ca8a04;
-  --cinza-100:    #f5f5f5;
-  --cinza-200:    #e5e5e5;
-  --cinza-400:    #a3a3a3;
-  --cinza-600:    #525252;
-  --cinza-800:    #262626;
-  --branco:       #ffffff;
-  --texto:        #1a1a2e;
-  --texto-suave:  #52525b;
-  --borda:        #e4e4e7;
+  --azul-escuro:  #003A6A;
+  --azul-medio:   #005DB4;
+  --azul-claro:   #E8F3FF;
+  --verde:        #18A14C;
+  --vermelho:     #D82C2C;
+  --laranja:      #E65B0B;
+  --amarelo:      #C88D05;
+  --cinza-100:    #F4F5F6;
+  --cinza-200:    #E3E5E8;
+  --cinza-400:    #A1A4AA;
+  --cinza-600:    #555861;
+  --cinza-800:    #272A30;
+  --branco:       #FFFFFF;
+  --texto:        #1B1D33;
+  --texto-suave:  #545866;
+  --borda:        #E2E5EA;
   --radius-sm:    6px;
   --radius-md:    10px;
   --radius-lg:    16px;
@@ -105,7 +105,7 @@ section[id] { scroll-margin-top: 70px; }
 .hero-desc { color: rgba(255,255,255,.75); font-size: 1rem; max-width: 520px; line-height: 1.7; margin-bottom: 2rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .7rem 1.5rem; border-radius: var(--radius-md); font-size: 14px; font-weight: 500; cursor: pointer; transition: all var(--transicao); border: none; font-family: var(--fonte-corpo); }
-.btn-primary { background: white; color: var(--azul-escuro); }
+.btn-primary { background: #FAF9F6; color: var(--azul-escuro); }
 .btn-primary:hover { background: #e6f2ff; transform: translateY(-1px); }
 .btn-outline { background: transparent; color: white; border: 1.5px solid rgba(255,255,255,.4); }
 .btn-outline:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
@@ -201,6 +201,9 @@ section[id] { scroll-margin-top: 70px; }
 
 /* Fazer o gráfico de evolução mensal ocupar a linha toda se preferir, ou deixar os 3 encaixados */
 .charts-grid .chart-card:nth-child(1) { grid-column: span 2; }
+.charts-grid .chart-card-wide { grid-column: span 2; }
+.chart-wrap-short { height: 220px !important; }
+.city-rank { margin-left: auto; font-size: 12px; color: var(--texto-suave); font-weight: 500; background: var(--cinza-100); padding: .15rem .55rem; border-radius: 20px; }
 
 .chart-card { background: white; border: 1px solid var(--borda); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--sombra-sm); display: flex; flex-direction: column;}
 .chart-card-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.5rem; border-bottom: 1px solid var(--borda); flex-wrap: wrap; }
@@ -255,6 +258,7 @@ section[id] { scroll-margin-top: 70px; }
 @media (max-width: 1024px) {
   .mapa-grid { grid-template-columns: 1fr; }
   .charts-grid .chart-card:nth-child(1) { grid-column: span 1; }
+  .charts-grid .chart-card-wide { grid-column: span 1; }
   .charts-grid { grid-template-columns: 1fr; }
   #leaflet-map { min-height: 360px; }
   .tabela-wrap { max-height: 360px; }

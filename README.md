@@ -20,6 +20,10 @@ O projeto inclui:
 O foco não é apenas analisar os dados, mas transformar essas informações 
 em algo útil para melhorar a segurança nas cidades.
 
+Este trabalho também presta uma homenagem ao nosso colega Bernardo Augusto Lodi, estudante do 5º período do curso de Análise e Desenvolvimento de Sistemas, cuja partida deixou profunda saudade entre amigos, professores e toda a comunidade acadêmica.
+
+Ao abordar a importância da segurança no trânsito, reforçamos a necessidade de conscientização, responsabilidade e cuidado coletivo para preservar vidas. Que a memória de Bernardo inspire atitudes mais seguras e humanas no trânsito, lembrando-nos de que cada vida tem um valor imensurável e merece ser protegida.
+
 ---
 ## 🌐 Visualização
 
@@ -29,18 +33,18 @@ Você pode visualizar o projeto [clicando aqui](https://eliaferreira.github.io/P
 
 ## 🎥 Demonstração em Vídeo
 
-Vídeo do protótipo do trabalho - Entrega 2: Assistir demonstração [clicando aqui](https://www.youtube.com/watch?v=g7nLRtZ_7us)
+Vídeo do protótipo do trabalho - Entrega 2: Para Assistir demonstração [clicando aqui](https://www.youtube.com/watch?v=g7nLRtZ_7us)
 
 ---
 
 ## 👥 Integrantes do Grupo
 
-- Eliã Barros Ferreira
-- Gedson Leandro Costa
-- João Vithor Lordes Stem Machado
-- Luan Gonçalves dos Santos
-- Marcelo Faitanin Machado
-- Lucas da Silva de Melo
+- Eliã Barros Ferreira.
+- Gedson Leandro Costa.
+- João Vithor Lordes Stem Machado.
+- Luan Gonçalves dos Santos.
+- Marcelo Faitanin Machado.
+- Lucas da Silva de Melo.
   
 
 ---
