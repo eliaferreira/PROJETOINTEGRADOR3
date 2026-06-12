@@ -41,6 +41,8 @@ Vídeo do protótipo do trabalho - Entrega 2: Para Assistir demonstração [clic
 
 Vídeo Final do trabalho - Entrega 3: Para Assistir demonstração [clicando aqui](https://www.youtube.com/watch?v=vfG9HgI5NQU)
 
+---
+
 ## 👥 Integrantes do Grupo
 
 - Eliã Barros Ferreira.
